@@ -1,0 +1,50 @@
+{
+  "main": {
+    "loadingPlugin": "Loading plugin: {{name}} v{{version}}",
+    "unloadingPlugin": "Unloading plugin: {{name}} v{{version}}",
+    "errors": {
+      "have_no_server_url": "Server URL is not set in plugin's settings.",
+      "have_no_token": "Access token is not set in plugin's settings.",
+      "configure_in_settings": "Please configure it in the settings tab."
+    },
+    "logged_as_user": "YouTasks: logged as {{username}}",
+    "onload_exception": "YouTasks loading exception:\n{{error}}"
+  },
+  "settings": {
+    "connection": {
+      "heading": "YouTrack Connection Parameters",
+      "token_label": "YouTrack Personal Token",
+      "token_placeholder": "Enter your token here...",
+      "server_url_label": "YouTrack Server URL",
+      "server_url_placeholder": "Enter url here..."
+    },
+    "issues_search_query": {
+      "heading": "Issues Query Settings",
+      "project_label": "YouTrack Project",
+      "project_placeholder": "Enter project here...",
+      "custom_query_label": "Custom Issues Search Query",
+      "custom_query_placeholder": "Enter issues search query here..."
+    },
+    "advanced":{
+      "custom_statuses": "Advanced: Custom statuses",
+      "custom_statuses_usage": "Custom Statuses Usage",
+      "custom_statuses_mapping": "Custom Statuses Mapping",
+      "custom_statuses_mapping_placeholder": "Put here JSON mapping for mapping states to symbols"
+    },
+    "errors": {
+      "setting_not_initialized": "Setting has not been initialized. Cannot update visibility of setting UI."
+    }
+  },
+  "commands": {
+    "add_issues_command": "Add YouTrack issues at current line (the line will be overwritten)",
+    "fetched_issues_count": "Fetched {{count}} issues.",
+    "filtered_issues_count": "Filtered {{count}} issues.",
+    "errors": {
+      "uninitialized_youtrack_client": "Uninitialized YouTrack client.\nCheck settings and reload plugin.",
+      "uninitialized_youtrack_project": "Uninitialized YouTrack project.",
+      "invalid_project_in_query": "Your query does not contain the project from settings.",
+      "query_return_zero_issues": "Query {{query}} returns zero issues.",
+      "retrieve_issues_exception": "Exception while retrieve issues: \n {{error}}"
+    }
+  }
+}

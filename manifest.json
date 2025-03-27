@@ -1,0 +1,11 @@
+{
+  "id": "obsidian-youtasks",
+  "name": "YouTasks",
+  "version": "0.1.0",
+  "minAppVersion": "1.4.0",
+  "description": "Integrates YouTrack issues into your Obsidian workflow",
+  "helpUrl": "https://github.com/aw350m33d/obsidian-youtasks",
+  "author": "Anton Kutepov",
+  "authorUrl": "https://github.com/aw350m33d",
+  "isDesktopOnly": false
+}

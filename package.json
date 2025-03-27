@@ -1,0 +1,67 @@
+{
+  "name": "obsidian-youtasks",
+  "version": "7.18.3",
+  "description": "Integrates YouTrack issues into your Obsidian workflow",
+  "main": "main.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "node esbuild.config.mjs production",
+    "build:dev": "node esbuild.config.mjs development",
+    "lint": "eslint ./src --fix && tsc --noEmit --pretty",
+    "deploy:local": "pwsh -ExecutionPolicy Unrestricted -NoProfile -File ./scripts/Test-TasksInLocalObsidian.ps1",
+    "extract-i18n": "npx i18next-parser",
+    "circular-deps-text": "madge --circular --extensions ts ./src > circular-deps.txt",
+    "circular-deps-image": "madge --circular --extensions ts ./src --image circular-deps.png"
+  },
+  "keywords": [
+    "obsidian",
+    "youtrack",
+    "obsidian-plugin",
+    "obsidian-youtasks",
+    "task-manager",
+    "task-management"
+  ],
+  "author": "Anton Kutepov",
+  "license": "MIT",
+  "devDependencies": {
+    "@codemirror/view": "^6.2.0",
+    "@evilmartians/lefthook": "^1.7.2",
+    "@types/jest": "^29.5.8",
+    "@types/mustache": "^4.2.5",
+    "@types/prettier": "^2.7.3",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
+    "approvals": "^6.2.4",
+    "async-mutex": "^0.4.0",
+    "builtin-modules": "^3.3.0",
+    "esbuild": "0.15.6",
+    "esbuild-sass-plugin": "^3.2.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "i18next-parser": "^9.1.0",
+    "madge": "^8.0.0",
+    "moment": "^2.29.4",
+    "obsidian": "^1.4.0",
+    "obsidian-typings": "^2.11.1",
+    "prettier": "^2.8.8",
+    "tslib": "^2.5.2",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@floating-ui/dom": "^1.6.12",
+    "boon-js": "^2.0.5",
+    "chrono-node": "2.3.9",
+    "eventemitter2": "^6.4.5",
+    "flatpickr": "^4.6.13",
+    "i18next": "^24.2.1",
+    "mustache": "^4.2.0",
+    "mustache-validator": "^0.2.0",
+    "rrule": "^2.7.2",
+    "youtrack-rest-client": "^1.6.0"
+  }
+}

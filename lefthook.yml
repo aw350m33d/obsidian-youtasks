@@ -1,0 +1,14 @@
+pre-push:
+  parallel: true
+  commands:
+    build:
+      run: yarn build
+    lint:
+      run: yarn lint
+
+pre-commit:
+  parallel: true
+  commands:
+    lint:
+      glob: '*.ts'
+      run: yarn lint "{staged_files}" && git add "{staged_files}"

@@ -1,0 +1,50 @@
+{
+  "main": {
+    "loadingPlugin": "Загрузка плагина: {{name}} v{{version}}",
+    "unloadingPlugin": "Выгрузка плагина: {{name}} v{{version}}",
+    "errors": {
+      "have_no_server_url": "URL сервера не задан в настройках расширения.",
+      "have_no_token": "Токен доступаа к API Youtrack не задан в настройках плагина.",
+      "configure_in_settings": "Пожалуйста, проверьте настройки плагина!"
+    },
+    "logged_as_user": "YouTasks: авторизован как {{username}}",
+    "onload_exception": "Исключение загрузки плагина YouTasks:\n{{error}}"
+  },
+  "settings": {
+    "connection": {
+      "heading": "Параметры подключения к YouTrack",
+      "token_label": "Персональный токен доступа к YouTrack",
+      "token_placeholder": "Введите свой токен здесь...",
+      "server_url_label": "URL сервера YouTrack",
+      "server_url_placeholder": "Введите URL сервера здесь..."
+    },
+    "issues_search_query": {
+      "heading": "Настройки запросов",
+      "project_label": "Проект YouTrack (аббревиатура, например XPI)",
+      "project_placeholder": "Введите сокращенное название проекта...",
+      "custom_query_label": "Собственный запрос для поиска issues",
+      "custom_query_placeholder": "Введите поисковой запрос issues здесь..."
+    },
+    "advanced":{
+      "custom_statuses": "Расширенные: собственные статусы",
+      "custom_statuses_usage": "Использовать собственные статусы",
+      "custom_statuses_mapping": "Маппинг кастомных статусов на типы задач",
+      "custom_statuses_mapping_placeholder": "Введите сопоставление состояния задачи с символом для собственных статусов (JSON-строкау)."
+    },
+    "errors": {
+      "setting_not_initialized": "Настройки приложения не проинициализированы. Не получается обновить видимость графического интерфейса настроек."
+    }
+  },
+  "commands": {
+    "add_issues_command": "Добавить задачи из YouTrack на текущую сторку (строка презапишется)",
+    "fetched_issues_count": "Получено {{count}} задач.",
+    "filtered_issues_count": "Отфильровано {{count}} задач.",
+    "errors": {
+      "uninitialized_youtrack_client": "Клиент YouTrack не проинициализирован.\nПроверьте настройки и перезагрузтите расширение.",
+      "uninitialized_youtrack_project": "Проект YouTrack не проинициализирован.",
+      "invalid_project_in_query": "Ваш запрос не содержит фильтр по имени проекта из настроек.",
+      "query_return_zero_issues": "Запрос {{query}} не вернул ни одной задачи.",
+      "retrieve_issues_exception": "Во время получения задач произошло исключение: \n {{error}}"
+    }
+  }
+}
